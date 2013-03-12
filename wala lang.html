@@ -1,0 +1,94 @@
+<!--?php session_start() ?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>CITY SLEEP INN</title>
+<link href="wala%20lang_files/main.css" rel="stylesheet" type="text/css">
+<!--?php
+$errmsg_arr = array();
+	
+	$errflag = false;
+if(empty($_SESSION['6_letters_code'] ) ||
+	  strcmp($_SESSION['6_letters_code'], $_POST['6_letters_code']) != 0)
+	{
+	//Note: the captcha code is compared case insensitively.
+	//if you want case sensitive match, update the check above to
+	// strcmp()
+	$errmsg_arr[] = 'invalid code';
+		$errflag = true;
+	}
+	if($errflag) {
+		$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
+		
+		session_write_close();
+		header("location: personnalinfo.php");
+		exit();
+	}
+
+</head-->
+
+</head><body>
+<div class="mainwrapper">
+  <div class="leftother">
+    <div class="l"></div>
+	<div class="r">
+	
+	
+	
+	
+	<div class="right3">
+<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+        <!-- the cmd parameter is set to _xclick for a Buy Now button -->
+        
+	 <div class="reservation" style="margin-left: 176px; width: 400px;">
+	  <div style="padding-top: 7px; font-size:24px;" align="center">
+	    <p>&nbsp;</p>
+	    <p>&nbsp;</p>
+	    <p>&nbsp;</p>
+	    <p><strong>Thank you!!!</strong></p>
+	  </div>
+	<div style="margin-top: 14px;">
+<label style="margin-left: 0px;">The transaction number </label>
+will be sent to your Email with in 24 hours. Please contact us !	</div>
+	
+	
+	</div></form> 
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div class="rightother">
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  
+</div>
+<div class="footer" style="text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:12px;"> Copyright © City Sleep Inn 2011 - 2012 All Rights reserved</div>
+
+
+
+
+
+
+</body></html>
